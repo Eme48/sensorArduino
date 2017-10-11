@@ -1,4 +1,5 @@
 
+
 //sensor
 
 long tiempo;
@@ -63,5 +64,9 @@ void loop() {
       analogWrite(medium,0);
       analogWrite(far,255);
  }
+} else {
+  analogWrite(near,0);
+  analogWrite(medium,0);
+  analogWrite(far,0);
 }
 }
